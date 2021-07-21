@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#SWTES0707-125] [TG-5] [Teodora] Poll creation - wrong time in the review poll screen</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('http://jira.softacad.bg/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [SWTES0707-125]&nbsp;<a href="http://jira.softacad.bg/browse/SWTES0707-125">[TG-5] [Teodora] Poll creation - wrong time in the review poll screen</a>
+            <span class="subText">
+               Created: 16/Aug/20                   &nbsp;Updated: 17/Aug/20
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">In Progress</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="http://jira.softacad.bg/secure/BrowseProject.jspa?id=11900">SW_Test_07_07_2020	</a></td>
+    </tr>
+
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                                        <a title="1.1.1"
+                href="http://jira.softacad.bg/issues/?jql=project%3D11900%20AND%20%22affectedVersion%22%3D11404%20ORDER%20BY%20priority%20ASC"
+            >1.1.1</a>                        </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                                        <a title="2.0.0 - Candidate release - final version"
+                href="http://jira.softacad.bg/issues/?jql=project%3D11900%20AND%20%22fixVersion%22%3D11406%20ORDER%20BY%20priority%20ASC"
+            >2.0.0</a>                        </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="tatanasova" id="word_reporter_tatanasova" href="http://jira.softacad.bg/secure/ViewProfile.jspa?name=tatanasova">Teodora Atanasova</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="gkerkeniakov" id="word_assignee_gkerkeniakov" href="http://jira.softacad.bg/secure/ViewProfile.jspa?name=gkerkeniakov">Gencho Kerkeniakov</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-17911-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="http://jira.softacad.bg/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    wrong time in poll results.PNG &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>After creating a poll, the user is redirected to the review poll screen - the time left for the poll is wrong.</p>
+
+<p>Steps to reproduce:</p>
+
+<p>1.Navigate to <a href="http://poll-app7-20200409.softacad.bg/poll/new" class="external-link" target="_blank" rel="nofollow noopener">http://poll-app7-20200409.softacad.bg/</a></p>
+
+<p>2.Login with valid credentials and click the New Poll icon.</p>
+
+<p>3. Write a question with 2 choices:</p>
+
+<p>Do you like pineapple on pizza?</p>
+<ul>
+	<li>Yes </li>
+	<li>No</li>
+</ul>
+
+
+<p>4. Make the poll length 1 day.</p>
+
+<p>5.Click Create Poll button.</p>
+
+<p>Expected result:</p>
+
+<p>The user is redirected to the review poll screen where he can see the question with the information exactly as he wrote it.</p>
+
+<p>Actual result:</p>
+
+<p>The information is not correct. For poll length instead of 24 hours, it says 23 hours.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-14912"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="st.ashkenazy" id="word_commented_st.ashkenazy" href="http://jira.softacad.bg/secure/ViewProfile.jspa?name=st.ashkenazy">Stephan Ashkenazy</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">17/Aug/20</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-14912"><td bgcolor="#ffffff">
+            <p>Excellent job Tedi!</p>
+        </td></tr>
+            </table>
+Generated at Wed Sep 09 18:41:36 EEST 2020 by Teodora Atanasova using Jira 8.5.7#805007-sha1:ee371e2031ce09ee3d2791725bfa635dcce61089.
+
+</body>
+</html>

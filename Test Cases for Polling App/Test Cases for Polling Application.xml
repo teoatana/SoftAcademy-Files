@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>11900</projectId>
+    <projectKey>SWTES0707</projectKey>
+    <modelVersion>1.0</modelVersion>
+    <jiraVersion>8.5.7</jiraVersion>
+    <exportDate>2020-09-09 15:48:10 UTC</exportDate>
+    <folders>
+        <folder fullPath="TestGroup-5" index="5"/>
+    </folders>
+    <testCases>
+        <testCase id="411" key="SWTES0707-T15">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Teodora Atanasova</createdBy>
+            <createdOn>2020-07-28 19:49:31 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-5]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-5] [Teodora] Successful Logout]]></name>
+            <objective><![CDATA[To validate that the the logout function works.]]></objective>
+            <owner>JIRAUSER12218</owner>
+            <precondition><![CDATA[<br/>We have successfully logged in <a href="http://poll-app7-20200409.softacad.bg/">http://poll-app7-20200409.softacad.bg/</a> with the provided username and password:<br/>password: 123456<br/>username: normalUser1<br/><br/><br/><br/>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Click on the profile icon.]]></description>
+                        <expectedResult><![CDATA[A drop-down menu should appear. One of the options should be Logout.]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Click on Logout.]]></description>
+                        <expectedResult><![CDATA[A message saying "You're successfully logged out" should appear.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+            <updatedBy>Teodora Atanasova</updatedBy>
+            <updatedOn>2020-07-28 21:51:20 UTC</updatedOn>
+        </testCase>
+        <testCase id="445" key="SWTES0707-T49">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Teodora Atanasova</createdBy>
+            <createdOn>2020-07-28 20:12:36 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-5]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-5] [Teodora] Profile button functionality]]></name>
+            <objective><![CDATA[See if the Profile button works properly. Once clicked a drop-down menu should appear.]]></objective>
+            <owner>JIRAUSER12218</owner>
+            <precondition><![CDATA[User should be logged in with valid credentials.<br/>password: 123456<br/>username: normalUser1]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Click on the profile icon.]]></description>
+                        <expectedResult><![CDATA[The icon should be clickable and a drop-down menu should appear.&nbsp;]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+            <updatedBy>Teodora Atanasova</updatedBy>
+            <updatedOn>2020-07-29 08:10:36 UTC</updatedOn>
+        </testCase>
+        <testCase id="457" key="SWTES0707-T61">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Teodora Atanasova</createdBy>
+            <createdOn>2020-07-28 20:26:09 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-5]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-5] [Teodora]  Logout after 60 minutes.]]></name>
+            <objective><![CDATA[To validate that the user is logged out by the server after 60 minutes.<br/>No automatic session validation logic is to be implemented; logout should be triggered upon new request to the server that requires authentication (e.g. vote in poll; create poll, etc.)]]></objective>
+            <owner>JIRAUSER12218</owner>
+            <precondition><![CDATA[We have successfully logged in with the provided username and password:<br/>password: 123456<br/>username: normalUser1<br/><br/><br/><br/>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Wait 60 minutes.]]></description>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Vote in a poll.]]></description>
+                        <expectedResult><![CDATA[The app should ask for the user´s credentials again.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+            <updatedBy>Teodora Atanasova</updatedBy>
+            <updatedOn>2020-07-29 08:11:14 UTC</updatedOn>
+        </testCase>
+        <testCase id="569" key="SWTES0707-T171">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Teodora Atanasova</createdBy>
+            <createdOn>2020-08-05 11:15:47 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-5]]></folder>
+            <issues>
+                <issue>
+                    <key>SWTES0707-66</key>
+                    <summary><![CDATA[[TG-5] [Teodora] No error message when full name has too many characters]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[[TG-5] [Teodora] [1.0.3] Signup Negative - full name with wrong character length]]></name>
+            <objective><![CDATA[To find out if the application will allow a full name with less/more characters than is allowed according to the SRS. (The field shall accept minimum of 4 and maximum of 40 characters)<br/>An error message should appear if the character length is wrong.]]></objective>
+            <owner>JIRAUSER12218</owner>
+            <precondition><![CDATA[1. Navigate to <a href="http://poll-app7-20200409.softacad.bg/signup">http://poll-app7-20200409.softacad.bg/signup</a><br/>2. Not logged in]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Click on the Full Name field and type a name that is 3 characters long.]]></description>
+                        <expectedResult><![CDATA[The border around the field should turn red and an error message should appear:<br/>Name is too short (Minimum 4 characters needed.) ]]></expectedResult>
+                        <testData><![CDATA[ana]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Click on the Full Name field and type a name that is 41 characters long.]]></description>
+                        <expectedResult><![CDATA[The border around the field should turn red and an error message should appear:<br/>Name is too long (Maximum 40 characters needed.)]]></expectedResult>
+                        <testData><![CDATA[vjlazqkhpluplijwyjykvrjnsiwfugixguyisebcs]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="570" key="SWTES0707-T172">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Teodora Atanasova</createdBy>
+            <createdOn>2020-08-05 11:18:37 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-5]]></folder>
+            <issues>
+                <issue>
+                    <key>SWTES0707-46</key>
+                    <summary><![CDATA[[TG-5] [Teodora] Visual bug - wrong password length]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[[TG-5] [Teodora] [1.0.3] Signup Negative - password with wrong character length]]></name>
+            <objective><![CDATA[To find out if the application will allow a password with less/more characters than is allowed according to the SRS. (The field shall accept minimum of 6 and maximum of 20 characters )<br/>An error message should appear if the character length is wrong.]]></objective>
+            <owner>JIRAUSER12218</owner>
+            <precondition><![CDATA[1. Navigate to <a href="http://poll-app7-20200409.softacad.bg/signup">http://poll-app7-20200409.softacad.bg/signup</a><br/>2. Not logged in]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Click on the Password field and type 5 characters,]]></description>
+                        <expectedResult><![CDATA[The border around the field should turn red and an error message should appear:<br/>Password is too short (Minimum 6 characters needed.) ]]></expectedResult>
+                        <testData><![CDATA[12345]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Click on the Password field and type 21 characters.]]></description>
+                        <expectedResult><![CDATA[The border around the field should turn red and an error message should appear:<br/>Password is too long (Maximum 20 characters needed.)]]></expectedResult>
+                        <testData><![CDATA[ppmqvucnmlaueuljxkpwz]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+            <updatedBy>Teodora Atanasova</updatedBy>
+            <updatedOn>2020-08-05 11:24:18 UTC</updatedOn>
+        </testCase>
+        <testCase id="649" key="SWTES0707-T249">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Teodora Atanasova</createdBy>
+            <createdOn>2020-08-12 21:13:03 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-5]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-5] [Teodora] [1.1.1] Registered users (normal account) - access to profile information]]></name>
+            <objective><![CDATA[To check if a registered user with a normal account has access to their profile.]]></objective>
+            <owner>JIRAUSER12218</owner>
+            <precondition><![CDATA[1.Navigate to&nbsp;<a href="http://poll-app7-20200409.softacad.bg/">http://poll-app7-20200409.softacad.bg/</a><br/>2.Successfully logged in with valid credentials.]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Click on the profile icon.]]></description>
+                        <expectedResult><![CDATA[The icon is clickable. A drop-down menu appears.]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Click on the profile option.]]></description>
+                        <expectedResult><![CDATA[The user is redirected to the poll review screen.<br/>The following information should be available there:<br/><ul><li>user details (full name, username, join date)</li><li>votes stats</li></ul><br/>]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="650" key="SWTES0707-T250">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Teodora Atanasova</createdBy>
+            <createdOn>2020-08-12 21:13:09 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-5]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-5] [Teodora] [1.1.1] Registered users (admin account) - access to profile information]]></name>
+            <objective><![CDATA[To check if a registered user with an admin account has access to their profile.]]></objective>
+            <owner>JIRAUSER12218</owner>
+            <precondition><![CDATA[1.Navigate to <a href="http://poll-app7-20200409.softacad.bg/">http://poll-app7-20200409.softacad.bg/</a><br/>2.Successfully logged in with valid credentials.]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Click on the profile icon.]]></description>
+                        <expectedResult><![CDATA[The icon is clickable. A drop-down menu appears.]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Click on the profile option.]]></description>
+                        <expectedResult><![CDATA[The user is redirected to the poll review screen.<br/>The following information should be available there:<br/><ul><li>user details (full name, username, join date)</li><li>polls created stats</li><li>votes stats</li></ul>]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="651" key="SWTES0707-T251">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Teodora Atanasova</createdBy>
+            <createdOn>2020-08-12 21:22:47 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-5]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-5] [Teodora] [1.1.1] Successfully vote in open poll]]></name>
+            <objective><![CDATA[To check if a normal user is able to vote in an open poll.<br/>The user should not be able to vote twice in the same poll.]]></objective>
+            <owner>JIRAUSER12218</owner>
+            <precondition><![CDATA[1.Navigate to <a href="http://poll-app7-20200409.softacad.bg/polls">http://poll-app7-20200409.softacad.bg/polls</a><br/>2.There is an open poll for voting<br/>3.Successfully logged in with valid credentials.<br/><br/>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Click on a choice from an active poll.]]></description>
+                        <expectedResult><![CDATA[The choice should be clickable. The user should be able to see which choice he has marked.]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Click on Vote button.]]></description>
+                        <expectedResult><![CDATA[The button is clickable and the the vote is registered. The choice made should be visible.]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Vote in the same poll again.]]></description>
+                        <expectedResult><![CDATA[The poll shouldn't allow a second vote.&nbsp;]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="757" key="SWTES0707-T353">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Teodora Atanasova</createdBy>
+            <createdOn>2020-08-16 19:54:08 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-5]]></folder>
+            <issues>
+                <issue>
+                    <key>SWTES0707-109</key>
+                    <summary><![CDATA[As an admin, I want to be able to create new polls]]></summary>
+                </issue>
+                <issue>
+                    <key>SWTES0707-125</key>
+                    <summary><![CDATA[[TG-5] [Teodora] Poll creation - wrong time in the review poll screen]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[[TG-5] [Teodora] [1.1.1] Admit account - poll creation]]></name>
+            <objective><![CDATA[To check if a registered user with an admin account can create a new poll.<br/>The poll needs to have text in the question field (The field shall accept maximum of 140 characters) and at least two choices in order to be created.]]></objective>
+            <owner>JIRAUSER12218</owner>
+            <precondition><![CDATA[1.Navigate to&nbsp;<a href="http://poll-app7-20200409.softacad.bg/">http://poll-app7-20200409.softacad.bg/</a><br/>2.Successfully logged in with valid credentials. ]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Click on the New Poll icon.]]></description>
+                        <expectedResult><![CDATA[The icon should be clickable and the user should be re-directed to the New Poll page:&nbsp;<a href="http://poll-app7-20200409.softacad.bg/poll/new">http://poll-app7-20200409.softacad.bg/poll/new</a>&nbsp;]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Write text in the question field that is less than 140 characters.]]></description>
+                        <expectedResult><![CDATA[Text should appear on the filed. No error messages should appear.]]></expectedResult>
+                        <testData><![CDATA[Do you like pineapple on pizza?]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Add 2 choices in total.]]></description>
+                        <expectedResult><![CDATA[No errors.]]></expectedResult>
+                        <testData><![CDATA[1.Yes<br/>2.No]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Select length of the poll in days and hours.]]></description>
+                        <expectedResult><![CDATA[The user shall be able to select them with no errors.]]></expectedResult>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[Click Create poll button]]></description>
+                        <expectedResult><![CDATA[Button is clickable and a new poll is created.<br/>The user is redirected to the review poll screen.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="761" key="SWTES0707-T357">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Teodora Atanasova</createdBy>
+            <createdOn>2020-08-16 20:28:55 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-5]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-5] [Teodora] [1.1.1] Admit account - poll creation; error message when the maximum character length is exceeded]]></name>
+            <objective><![CDATA[When registered user with an admin account creates a new poll he has to write a question with a maximum of 140 characters.<br/>The objective of this test is to see if an <strong>error message</strong> appears when the question exceeds the limit of 140 characters.]]></objective>
+            <owner>JIRAUSER12218</owner>
+            <precondition><![CDATA[1.Navigate to <a href="http://poll-app7-20200409.softacad.bg/">http://poll-app7-20200409.softacad.bg/</a><br/>2.Successfully logged in with valid credentials.<br/>3. Navigate to <a href="http://poll-app7-20200409.softacad.bg/poll/new">http://poll-app7-20200409.softacad.bg/poll/new</a>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Write text in the question field that is 141 characters.]]></description>
+                        <expectedResult><![CDATA[The border of the field should become red and a message warning should appear that the question is too long, over 140 characters.]]></expectedResult>
+                        <testData><![CDATA[HsY3BwWPfvqMdnmZVvaugAzeYB92Mzt8U7DbF8nyTMPMKZh1ya6QaqhaLPpYPdwJ9RhuWrgyJw3YKq3XApzF5ycREVkFRxM6MLWqWPut59Aq5mGyFt44N0VQxKpyDVzyfAKP23eLW1Rnb]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+            <updatedBy>Teodora Atanasova</updatedBy>
+            <updatedOn>2020-08-16 20:29:22 UTC</updatedOn>
+        </testCase>
+        <testCase id="762" key="SWTES0707-T358">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Teodora Atanasova</createdBy>
+            <createdOn>2020-08-16 20:36:26 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-5]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-5] [Teodora] [1.1.1] Admit account - poll creation with only 1 choice]]></name>
+            <objective><![CDATA[A poll needs at least two choices in order to be created.<br/>The objective of this test is to see if a poll with one choice can be created.]]></objective>
+            <owner>JIRAUSER12218</owner>
+            <precondition><![CDATA[1.Navigate to <a href="http://poll-app7-20200409.softacad.bg/">http://poll-app7-20200409.softacad.bg/</a><br/>2.Successfully logged in with valid credentials.<br/>3. Navigate to <a href="http://poll-app7-20200409.softacad.bg/poll/new">http://poll-app7-20200409.softacad.bg/poll/new</a>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Write a question.]]></description>
+                        <expectedResult><![CDATA[The text appears; no error messages.]]></expectedResult>
+                        <testData><![CDATA[What is your favorite number?]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Add one choice]]></description>
+                        <expectedResult><![CDATA[Choice appears.]]></expectedResult>
+                        <testData><![CDATA[13]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Click Create poll button.]]></description>
+                        <expectedResult><![CDATA[A poll is not created; an error message appears.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="766" key="SWTES0707-T362">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Teodora Atanasova</createdBy>
+            <createdOn>2020-08-16 23:52:53 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-5]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-5] [Teodora] [1.1.1] Admit account - poll creation; Add a choice button disabled after 6 choices]]></name>
+            <objective><![CDATA[To check if the the Add a choice is disabled after 6 choices are added to a poll in poll creation.]]></objective>
+            <owner>JIRAUSER12218</owner>
+            <precondition><![CDATA[1.Navigate to <a href="http://poll-app7-20200409.softacad.bg/">http://poll-app7-20200409.softacad.bg/</a><br/>2.Successfully logged in with valid credentials.<br/>3. Navigate to <a href="http://poll-app7-20200409.softacad.bg/poll/new">http://poll-app7-20200409.softacad.bg/poll/new</a>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Write a question in the question field.]]></description>
+                        <expectedResult><![CDATA[The text appears.]]></expectedResult>
+                        <testData><![CDATA[What is your favorite number?]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Add 6 choices.]]></description>
+                        <expectedResult><![CDATA[The choices are accepted and the Add a choice button is disabled.<br/>More choices can't be added.]]></expectedResult>
+                        <testData><![CDATA[1<br/>2<br/>3<br/>4<br/>5<br/>6]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
